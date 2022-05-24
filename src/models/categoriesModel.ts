@@ -10,8 +10,7 @@ const CategorySchema: Schema = new Schema({
         required:true
     },
     category: { 
-        type : Array , 
-        "default" : [],
+        type : String, 
         required: true
     },
     created:{

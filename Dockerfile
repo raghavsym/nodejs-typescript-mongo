@@ -1,4 +1,4 @@
-FROM raghav/dummy:3.4-v6.9.4-4.2.0
+FROM node:16-alpine
 
 ENV PORT 3001
 
