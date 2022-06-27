@@ -1,5 +1,4 @@
 import app from './app';
-// import url from './config/db.config';
 import { MongoConnection } from './database/database';
 
 async function bootStrapApp(): Promise<any>{
@@ -17,7 +16,7 @@ async function bootStrapApp(): Promise<any>{
     }catch(e){
       console.log('Database connection error: ', e)
     }
-    return console.log(`server is listening on ${port}`);
+    return console.log(`server is listening on ${port} as http://localhost:${port}/`);
   })
 }
 

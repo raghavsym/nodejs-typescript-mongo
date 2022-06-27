@@ -1,6 +1,4 @@
 import * as express from 'express'
-// import { appendFile } from 'fs';
-
 const routes = require('./routes');
 
 class App {
