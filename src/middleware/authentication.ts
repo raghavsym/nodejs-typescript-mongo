@@ -25,7 +25,7 @@ export const verifyJwt = async (req, res, next) => {
   }
   try {
     req.token = token;
-    const decoded = await jwt.verify(req.token, secrets.JWT_KEY);
+    const decoded = await jwt.verify(req.token, secrets.JWT_KEY);   
     req.user = decoded.userData;
   } catch (err) {
     return res.status(401).send("Invalid Token!");

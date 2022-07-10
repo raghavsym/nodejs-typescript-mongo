@@ -91,6 +91,7 @@ export default class UserController {
   public async getAllUser(req: any, res: any) {
     try {
       const users = await User.find();
+      console.log('user')
       res.status(200).send(users);
     } catch (err) {
       res.status(400).send({
